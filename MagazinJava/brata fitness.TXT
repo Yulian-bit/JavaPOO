@@ -1,0 +1,124 @@
+public class BrataFitness extend DispozitivMobil {
+ String CompatibileSistemoper,tipIncarcare;
+float sensori;
+int numarActivitti;
+boolean activitateMonitorizanta;
+
+
+public BrataFitness() {
+		super();
+		}
+	
+	public BRataFitness(float pret,String brand,String tipEcran,String tipBaterie,int capacitateBaterie,int autonomie,
+			int memorieRam,int stocare,float frecventaProcesor,String culoare,boolean rezistentaApa,String conectivitate,
+			String CompatibileSistemoper,String materialCarcasa,String tipIncarcare,String stilDisplay,
+			boolean activitateMonitorizanta,int numarActivitati,float dimensiuneCarcasa) 
+	{
+	super( "BrataFitness", brand, pret, tipEcran, tipBaterie, capacitateBaterie, autonomie,
+		 memorieRam, stocare, frecventaProcesor, culoare, rezistentaApa, conectivitate);
+	this.CompatibileSistemoper=CompatibileSistemoper;
+	this.materialCarcasa=materialCarcasa;
+	this.tipIncarcare=tipIncarcare;
+	this.stilDisplay=stilDisplay;
+	this.activitateMonitorizanta=activitateMonitorizanta;
+	this.numarActivitati=numarActivitati;
+	this.dimensiuneCarcasa=dimensiuneCarcasa;
+		
+	}
+	
+	public BrataFitness(Bratafitness sw)
+	{
+		super(sw);
+		CompatibileSistemoper=sw.CompatibileSistemoper;
+		materialCarcasa=sw.materialCarcasa;
+		tipIncarcare=sw.tipIncarcare;
+		stilDisplay=sw.stilDisplay;
+		activitateMonitorizanta=sw.activitateMonitorizanta;
+		numarActivitati=sw.numarActivitati;
+		dimensiuneCarcasa=sw.dimensiuneCarcasa;
+	}
+
+
+
+	public void setSistemeOperareCompatibile(String sistemeOperareCompatibile)
+	{
+		this.sistemeOperareCompatibile=sistemeOperareCompatibile;
+	}
+
+	public String getSistemeOperareCompatibile()
+	{
+		return sistemeOperareCompatibile;
+	}
+	
+	public void setMaterialCarcasa(String materialCarcasa)
+	{
+		this.sistemeOperareCompatibile=materialCarcasa;
+	}
+
+	public String getMaterialCarcasa()
+	{
+		return materialCarcasa;
+	}
+	
+	public void setTipIncarcare(String tipIncarcare)
+	{
+		this.tipIncarcare=tipIncarcare;
+	}
+
+	public String getTipIncarcare()
+	{
+		return tipIncarcare;
+	}
+	
+	public void setStilDisplay(String tipIncarcare)
+	{
+		this.tipIncarcare=tipIncarcare;
+	}
+
+	public String getStilDisplay()
+	{
+		return tipIncarcare;
+	}
+	
+	public void setActivitateMonitorizanta(Boolean activitateMonitorizanta)
+	{
+		this.activitateMonitorizanta=activitateMonitorizanta;
+	}
+	
+	public Boolean getActivitateMonitorizanta()
+	{
+		return activitateMonitorizanta;
+	}
+	
+	public void setNumarActivitati(int numarActivitati)
+	{
+		this.numarActivitati=numarActivitati;
+	}
+	
+	public int getNumarActivitati()
+	{
+		return numarActivitati;
+	}
+	
+	
+	public void setDimensiuneCarcasa(float dimensiuneCarcasa)
+	{
+		this.dimensiuneCarcasa=dimensiuneCarcasa;
+	}
+	
+	public float getDimensiuneCarcasa()
+	{
+		return dimensiuneCarcasa;
+	}
+	
+	public String toString1()
+	{
+		super.toString();
+		return "CompatibileSistemoper:"+CompatibileSistemoper+"\n"+
+		"materialCarcasa:"+materialCarcasa+"\n"+
+		"tipIncarcare:"+tipIncarcare+"\n"+
+		"stilDisplay:"+stilDisplay+"\n"+
+		"activitateMonitorizanta:"+activitateMonitorizanta+"\n"+
+		"numarActivitati:"+numarActivitati+"\n"+
+		"dimensiuneCarcasa:"+dimensiuneCarcasa;
+	}

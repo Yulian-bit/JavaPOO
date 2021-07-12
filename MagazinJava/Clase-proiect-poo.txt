@@ -1,0 +1,54 @@
+Class Dispozitiv_mobil(Clasa parinte)
+	-dispozitiv -> string
+	-brand -> string
+	-pret -> float
+	-tip ecran(Amoled) -> string
+	-dimensiune display(6.7inch) -> float
+	-tip baterie(Li-Ion) -> string
+	-capacitate baterie(3000mA) -> int
+	-autonomie(20h) -> float
+	-memorie ram(2Gb) -> int
+	-stocare(5Gb) -> int
+	-frecventa procesor(2.5Gh) -> float
+	-masa(330) -> float
+	-culoare(Argintiu) -> string
+	-rezistent la apa(DA/NU) -> boolean
+	-Conectivitate(Wi-fi) -> string
+	
+
+Class Smartwatch
+	-sisteme de operare compatibile(Ios) -> string
+	-material carcasa(metal) -> string
+	-tip incarcare(magnetic) -> string
+	-stil display(rotund) -> string
+	-activitate monitorizanta(DA/NU) ->bool
+	-numar activitati -> int
+	-dimensiune carcasa(46.7mm) -> float
+
+
+Class AccesoriiSmrtch
+	-material curea(piele) -> string
+	-lungime curea(200mm) -> float
+	-culoare curea(maro) -> string
+	-incarcator(700mA) -> int	
+	-cablu de incarcare(1.1m) -> float
+ 	-folie de protectie(DA/NU) -> bool
+	-husa de protectie(DA/NU) -> bool
+	-rama cadran(DA/NU) -> bool
+
+Class brata fitness 
+    -Compatibile(android, si IOS) -> string
+    -Senzori (acclometru,heart rate sensor) - float 
+    - numar activitati - int
+    - tip incarcare(magnetic ) -> string 
+    -activitate monitorizanta  - true , false 
+    
+
+Class AccesoriiBrata 
+    matetial brata - silicon - string
+    Culoare brata - orice - stringcolor
+    dimensiuni 18.3 X 45.1 - de tip float 
+    greutate 23 g - int 
+
+    
+    
